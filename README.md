@@ -1,47 +1,37 @@
-# Alerta contra invasões
-Este projeto consiste em uma aplicação que utiliza técnicas de visão computacional para detectar a presença de pessoas em vídeos. 
-A detecção é realizada em tempo real e, ao identificar uma pessoa em uma área pré-definida, o sistema emite alertas visuais e sonoros e inicia a gravação de um video para ajudar na identificação.
+# Alerta Contra Invasões
 
-# Funcionalidades
-- Utilização do modelo SSD MobileNet para detecção de objetos, com foco na classe 'person'.
-- Interface gráfica desenvolvida com Kivy para configuração e controle da aplicação.
-- Reprodução de alerta sonoro e visual ao detectar uma pessoa na área de interesse.
-- Gravação de vídeo automática durante o alerta de detecção.
+Este projeto é uma aplicação de visão computacional capaz de detectar pessoas em tempo real utilizando *deep learning*.  
+Quando uma pessoa é identificada dentro de uma área configurável (ROI), o sistema dispara um alerta sonoro e visual, além de iniciar automaticamente a gravação de um vídeo para apoiar na identificação.
 
-# Tecnologias
-- OpenCV: Biblioteca de visão computacional para processamento de imagens e vídeos.
-- Kivy: Framework Python para criação de interfaces gráficas multi-touch.
-- Pygame: Biblioteca para reprodução de áudio durante os alertas.
-- Python threading: Utilizado para executar funções em threads separadas para alertas simultâneos.
+---
 
- # Requisitos
-- Python 3.x
-- OpenCV
-- Kivy
-- Pygame
+## 📌 Funcionalidades
 
-## Clone este repositório:
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+- **Detecção em tempo real** usando o modelo *SSD MobileNet v3*.
+- **Área de detecção ajustável (ROI)** — mover/redimensionar livremente.
+- **Alerta sonoro automático** ao detectar uma pessoa.
+- **Gravação de vídeo** durante o alerta.
+- Interface gráfica com **Kivy** para controle da aplicação.
 
-## Instale as dependências:
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- **OpenCV** — visão computacional.
+- **Kivy** — interface gráfica.
+- **Pygame** — alerta sonoro.
+- **Threading (Python)** — execução paralela para evitar travamentos.
+
+---
+
+## 📦 Requisitos
+
+- Python 3.x  
+- OpenCV  
+- Kivy  
+- Pygame  
+
+Instale tudo com:
+
+```bash
 pip install -r requirements.txt
-
-# Utilização 
-- Execute o arquivo python app.py
-
-# Estrutura de arquivos
-- alerta-contra-invas-o/
-- app.py
-- main.py
-- opcoes.py
-- alert_sound.wav.mp3
-- ex01.mp4
-- ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt
-- frozen_inference_graph.pb
-- coco.names
-- mario-yoshi.gif
-- README.md
-- requirements.txt
-
-# Contribuição
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests para melhorias no projeto.
